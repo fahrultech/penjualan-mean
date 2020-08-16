@@ -1,0 +1,33 @@
+<div id="wrapper">
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="text-center">
+        <!-- <a href="" class="logo"><img src="" alt="logo-img"></a>
+        <a href="" class="logo-sm"><img src="" alt="logo-img"></a> -->
+      </div>
+    </div>
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="">
+          <div class="pull-left">
+            <button class="button-menu-mobile open-left waves-effect waves-light">
+              <i class="ion-navicon"></i>
+            </button>
+            <span class="clearfix"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-sidebar></app-sidebar>
+  <div class="content-page">
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <div style="display:none;text-align:center" class="content updating">
+      <h2>Updating....</h2>
+    </div>
+    <div class="footer">
+    </div>
+  </div>
+</div>
