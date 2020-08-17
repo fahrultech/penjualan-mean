@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DatabarangComponent } from './barang/databarang/databarang.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgSlimScrollModule, SLIMSCROLL_DEFAULTS } from 'ngx-slimscroll';
+import { DataTablesModule } from 'angular-datatables';
 import * as $ from 'jquery'
 
 @NgModule({
@@ -19,7 +21,9 @@ import * as $ from 'jquery'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgSlimScrollModule
+    NgSlimScrollModule,
+    DataTablesModule,
+    HttpClientModule
   ],
   providers: [
     {
